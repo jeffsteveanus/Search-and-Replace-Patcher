@@ -58,10 +58,11 @@
                 IO.File.WriteAllBytes(filePath, data)
                 MessageBox.Show("Patch Successful", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
             Else
-                MessageBox.Show("Patch Failed. File may already be patched or version not supported.", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                MessageBox.Show("Patch Failed. File is already patched or the version is not supported.", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             End If
         Catch ex As Exception
             MessageBox.Show("Patch Failed: " & ex.Message, "Failed", MessageBoxButtons.OK, MessageBoxIcon.Warning)
         End Try
     End Sub
 End Class
+
